@@ -1,10 +1,13 @@
 {
   "name": "react-library-esbuild",
-  "version": "1.1.0",
+  "version": "2.0.2",
   "description": "",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "url": "https://github.com/josiext/react-library-esbuild"
+  },
   "scripts": {
     "build": "npm run clean && node build.js && tsc --emitDeclarationOnly --outDir dist",
     "clean": "rimraf dist",
