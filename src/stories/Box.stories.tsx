@@ -8,14 +8,20 @@ export default {
   component: Box,
   argTypes: {
     backgroundColor: { control: "color" },
+    bg: { control: "color" },
   },
 } as ComponentMeta<typeof Box>;
 
-const Template: ComponentStory<typeof Box> = (args: any) => <Box {...args} />;
+const Template: ComponentStory<typeof Box> = (
+  args: React.ComponentPropsWithRef<typeof Box>
+) => <Box {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  bg: "red",
+  width: [1, 1 / 2],
+  p: 4,
+  mt: 3,
+  bg: "tomato",
+  children: "some text",
   color: "white",
-  children: "Button",
 };
