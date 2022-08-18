@@ -1,4 +1,4 @@
-import { Button, Input } from "lib";
+import { Box, Button, Input } from "lib";
 import React from "react";
 
 const App = () => (
@@ -7,6 +7,8 @@ const App = () => (
     <Button label="My button" />
     <h1>Input</h1>
     <Input label="My Input" />
+
+    <Box children="hola" bg="red" color="yellow" />
   </div>
 );
 

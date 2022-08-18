@@ -1,6 +1,6 @@
 {
   "name": "react-library-esbuild",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -12,22 +12,38 @@
     "build": "npm run clean && node build.js && tsc --emitDeclarationOnly --outDir dist",
     "clean": "rimraf dist",
     "dev": "node serve.js",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [],
   "author": "José Núñez",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-interactions": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/builder-webpack4": "^6.5.10",
+    "@storybook/manager-webpack4": "^6.5.10",
+    "@storybook/react": "^6.5.10",
+    "@storybook/testing-library": "^0.0.13",
+    "babel-loader": "^8.2.5",
     "esbuild": "^0.14.53",
     "live-server": "^1.2.2",
     "rimraf": "^3.0.2",
     "typescript": "^4.7.4"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
     "@types/react": "^18.0.16",
     "@types/react-dom": "^18.0.6",
+    "@types/styled-system": "^5.1.15",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "styled-system": "^5.1.5"
   },
   "files": [
     "dist"
