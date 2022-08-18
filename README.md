@@ -8,6 +8,10 @@
 
 `npm run dev`
 
+## StoryBook
+
+`npm run storybook`
+
 ## Publish
 
 `npm publish`
