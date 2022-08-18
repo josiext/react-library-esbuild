@@ -1,6 +1,28 @@
 import styled from "@emotion/styled";
-import { typography, space, color, layout, flexbox } from "styled-system";
+import {
+  typography,
+  space,
+  color,
+  layout,
+  flexbox,
+  grid,
+  background,
+  position,
+  border,
+  shadow,
+} from "styled-system";
 
-const Box = styled.div(typography, space, color, layout, flexbox);
+const Box = styled.div(
+  typography,
+  space,
+  color,
+  layout,
+  flexbox,
+  grid,
+  background,
+  border,
+  position,
+  shadow
+);
 
 export default Box;
