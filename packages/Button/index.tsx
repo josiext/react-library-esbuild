@@ -1,18 +1,19 @@
 /** @jsxRuntime automatic */
 /** @jsxImportSource theme-ui */
 
-import { Button as ButtonThemeUI, ThemeUIStyleObject } from "theme-ui";
+import {
+  Button as ButtonThemeUI,
+  ButtonProps as ButtonPropsThemeUI,
+} from "theme-ui";
 
-export interface ButtonProps {
-  sx?: ThemeUIStyleObject | undefined;
+export interface ButtonProps extends ButtonPropsThemeUI {
   variant?: "primary" | "secondary";
-  children: React.ReactNode;
 }
 
 export default function Button({
-  children,
   sx,
   variant = "primary",
+  ...rest
 }: ButtonProps) {
   return (
     <ButtonThemeUI
@@ -23,8 +24,7 @@ export default function Button({
         cursor: "pointer",
         ...sx,
       }}
-    >
-      {children}
-    </ButtonThemeUI>
+      {...rest}
+    />
   );
 }
