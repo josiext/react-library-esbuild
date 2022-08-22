@@ -1,3 +1,4 @@
+/** @jsxRuntime automatic */
 /** @jsxImportSource theme-ui */
 
 import { Button as ButtonThemeUI, ThemeUIStyleObject } from "theme-ui";

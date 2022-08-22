@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Button, Input } from "lib";
+import { Box, Input } from "lib";
 
 const App = () => {
   const [sectionSelected, setSectionSelected] = useState("");
@@ -51,7 +51,6 @@ const App = () => {
       {sectionSelected === "button" && (
         <div>
           <h2>Button</h2>
-          <Button label="My button" />
 
           <div>
             <code>{`<Button label="My button" />`}</code>
