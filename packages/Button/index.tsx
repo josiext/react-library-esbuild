@@ -10,11 +10,7 @@ export interface ButtonProps extends ButtonPropsThemeUI {
   variant?: "primary" | "secondary";
 }
 
-export default function Button({
-  sx,
-  variant = "primary",
-  ...rest
-}: ButtonProps) {
+export const Button = ({ sx, variant = "primary", ...rest }: ButtonProps) => {
   return (
     <ButtonThemeUI
       sx={{
@@ -27,4 +23,4 @@ export default function Button({
       {...rest}
     />
   );
-}
+};

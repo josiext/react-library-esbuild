@@ -12,7 +12,7 @@ import {
   shadow,
 } from "styled-system";
 
-const Box = styled.div(
+export const Box = styled.div(
   typography,
   space,
   color,
@@ -24,5 +24,3 @@ const Box = styled.div(
   position,
   shadow
 );
-
-export default Box;

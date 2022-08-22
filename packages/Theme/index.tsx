@@ -4,7 +4,7 @@
 import type { Theme } from "theme-ui";
 import { ThemeProvider as ThemeProviderUI } from "theme-ui";
 
-export const DefaultTheme: Theme = {
+export const defaultTheme: Theme = {
   fonts: {
     body: "system-ui, sans-serif",
     heading: '"Avenir Next", sans-serif',
@@ -22,9 +22,9 @@ export interface ThemeProviderProps {
   theme?: Theme;
 }
 
-export default function ThemeProvider({
+export function ThemeProvider({
   children,
-  theme = DefaultTheme,
+  theme = defaultTheme,
 }: ThemeProviderProps) {
   return <ThemeProviderUI theme={theme}>{children}</ThemeProviderUI>;
 }
