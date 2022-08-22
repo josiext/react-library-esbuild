@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Input } from "lib";
+import { Box, Input } from "../packages";
 
 const App = () => {
   const [sectionSelected, setSectionSelected] = useState("");
@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div>
       <header>
-        <h1>Lemont System </h1>
+        <h1>Lemont System</h1>
       </header>
 
       <ul>

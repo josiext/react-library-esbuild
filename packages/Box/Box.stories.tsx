@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { Box } from "../lib";
+import Box from "./index";
 
 export default {
   title: "Components/Box",

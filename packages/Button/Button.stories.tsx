@@ -2,7 +2,7 @@ import React from "react";
 import { ThemeProvider } from "theme-ui";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { Button } from "../lib";
+import Button from "./";
 
 import type { Theme } from "theme-ui";
 

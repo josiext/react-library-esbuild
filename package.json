@@ -9,11 +9,11 @@
     "url": "https://github.com/josiext/react-library-esbuild"
   },
   "scripts": {
+    "start": "start-storybook -p 6006",
+    "start:doc": "node serve.js",
     "build": "npm run clean && node build.js && tsc --emitDeclarationOnly --outDir dist",
     "clean": "rimraf dist",
-    "dev": "node serve.js",
     "prepublishOnly": "npm run build",
-    "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "keywords": [],
