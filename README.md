@@ -4,10 +4,6 @@
 
 `npm install react-library-esbuild`
 
-## Dev
-
-`npm run dev`
-
 ## StoryBook
 
 `npm run storybook`
