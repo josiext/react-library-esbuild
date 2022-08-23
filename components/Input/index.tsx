@@ -1,10 +1,14 @@
 import React from "react";
 
-export function Input({ label }: { label: string }) {
+export interface InputProps {
+  label?: string;
+}
+
+export const Input = ({ label }: InputProps) => {
   return (
     <label>
       {label}
       <input />
     </label>
   );
-}
+};
