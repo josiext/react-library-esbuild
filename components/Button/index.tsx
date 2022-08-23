@@ -4,13 +4,15 @@
 import {
   Button as ButtonThemeUI,
   ButtonProps as ButtonPropsThemeUI,
+  ThemeUIStyleObject,
 } from "theme-ui";
 
-export interface ButtonProps extends ButtonPropsThemeUI {
+export interface ButtonProps extends Omit<ButtonPropsThemeUI, "css"> {
+  css?: ThemeUIStyleObject | null;
   variant?: "primary" | "secondary";
 }
 
-export const Button = ({ sx, variant = "primary", ...rest }: ButtonProps) => {
+export const Button = ({ css, variant = "primary", ...rest }: ButtonProps) => {
   return (
     <ButtonThemeUI
       sx={{
@@ -18,7 +20,7 @@ export const Button = ({ sx, variant = "primary", ...rest }: ButtonProps) => {
         backgroundColor: variant === "primary" ? "red" : "green",
         fontSize: "50px",
         cursor: "pointer",
-        ...sx,
+        ...css,
       }}
       {...rest}
     />

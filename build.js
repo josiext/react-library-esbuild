@@ -1,10 +1,11 @@
 const { build } = require("esbuild");
 const { dependencies } = require("./package.json");
 
-const entryFile = "components/index.ts";
+const ENTRY_POINT = "components/index.ts";
+
 const shared = {
   bundle: true,
-  entryPoints: [entryFile],
+  entryPoints: [ENTRY_POINT],
   external: Object.keys(dependencies),
   minify: true,
   sourcemap: true,
