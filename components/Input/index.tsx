@@ -1,4 +1,5 @@
 import React from "react";
+import { tw } from "twind";
 
 export interface InputProps {
   label?: string;
@@ -6,7 +7,7 @@ export interface InputProps {
 
 export const Input = ({ label }: InputProps) => {
   return (
-    <label>
+    <label className={tw`bg-purple-400`}>
       {label}
       <input />
     </label>
