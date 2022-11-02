@@ -31,6 +31,7 @@
     "@types/react": "18.0.16",
     "@types/react-dom": "18.0.6",
     "babel-loader": "8.2.5",
+    "changeset": "0.2.6",
     "esbuild": "0.14.53",
     "rimraf": "3.0.2",
     "twind": "0.16.17",
